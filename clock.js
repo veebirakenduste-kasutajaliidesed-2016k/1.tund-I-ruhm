@@ -2,6 +2,21 @@
 
    var clock = document.getElementById('clock');
 
+   clock.addEventListener('click', function(){
+
+     console.log('klikk');
+
+   });
+
+   window.addEventListener('keypress', function(event){
+     console.log(event);
+
+     if(event.charCode == 13){
+       alert('enter');
+     }
+
+   });
+
    // enne timeouti kirjutan ühe korra ära
    writeDate();
 
